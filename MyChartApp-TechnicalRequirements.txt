@@ -1,0 +1,28 @@
+This project is to develop multiple charts consuming data  from JSON. The charts will be in 50-70 in number in a single scroll-able web page. The sample image of kinds  of charts is attached. The design and implementation should be such that it could be extended and more such charts could be added in a single page of charts.
+Sample chart format image and JSON  file attached in the upwork job.
+The photo here is sample... There will be 70 charts in total and some will be candle stick , some will be bar, some will have only -ve value, some will have both -ve and +ve values
+
+Detailed Requirements:
+
+1: REST API will be called to fetch JSON data
+2: Charts need to have show  hide feature. It will be difficult to view all at a time. So based on my comfort I should be able to hide/remove/add again few charts to have a cleaner screen scroll.
+3: ZoomIn , Zoom Out feature  should be there
+4: I should be able to change chart labels
+5: The chart set should be extendable by providing more JSON sets. 
+s
+6: Chart set should  be vertical scrollable
+7: Every chart will be stacked vertically with Y axis as date and X axis will have apprppriate scale that  fits the data
+
+
+
+
+The  Development Proposal needs to clarify the following:
+
+1: All the software details which will be used to develop and deploy this app on LAN as well as AWS
+2: Time to complete the App
+3: First a small demo of charts needs to be developed after the demo approval main development should start
+
+
+
+
+

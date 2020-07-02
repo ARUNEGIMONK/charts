@@ -1,0 +1,305 @@
+************** JSON For "Price" Candlestick Chart ***************
+
+{
+    "message": "Successfully fetched data... !!",
+    "status": "OK",
+    "nseEqs": [
+        {
+            "id": null,
+            "symbol": "XXXX",
+            "series": "EQ",
+            "open": 180.3,
+            "high": 184.95,
+            "low": 179.5,
+            "close": 184.5,
+            "last": null,
+            "previousClose": null,
+            "totalTradedQty": null,
+            "totalTradedValue": null,
+            "timestamp": null,
+            "totalTrades": null,
+            "isin": null,
+            "createdDate": "2020-06-19"
+        },
+        {
+            "id": null,
+            "symbol": "XXXX",
+            "series": "EQ",
+            "open": 185.0,
+            "high": 191.75,
+            "low": 184.25,
+            "close": 187.7,
+            "last": null,
+            "previousClose": null,
+            "totalTradedQty": null,
+            "totalTradedValue": null,
+            "timestamp": null,
+            "totalTrades": null,
+            "isin": null,
+            "createdDate": "2020-06-22"
+        }
+    ],
+    "nseVolts": null,
+    "nseMTOs": null
+}
+
+
+************** JSON For "Qty Trd" Bar Chart ***************
+
+{
+    "message": "Successfully fetched data... !!",
+    "status": "OK",
+    "nseVolts": null,
+    "nseMTOs": [
+        {
+            "id": null,
+            "srNo": 1305,
+            "securityName": "XXXX",
+            "securityType": "EQ",
+            "quantityTraded": 76897890,
+            "deliverableQuantity": 15049467,
+            "percentageDelivery": 19.57,
+            "recordType": 20,
+            "createdDate": "2020-06-19"
+        },
+        {
+            "id": null,
+            "srNo": 1349,
+            "securityName": "XXXX",
+            "securityType": "EQ",
+            "quantityTraded": 80024673,
+            "deliverableQuantity": 16662588,
+            "percentageDelivery": 20.82,
+            "recordType": 20,
+            "createdDate": "2020-06-22"
+        }
+    ]
+}
+
+
+************** JSON For "Chg in OI" Bar Chart(+ve and -ve values) ***************
+
+{
+    "message": "Successfully fetched FUT data... !!",
+    "status": "OK",
+    "nseFnOs": [
+        {
+            "id": null,
+            "expiryDt": "2020-06-25",
+            "instrument": "FUTSTK",
+            "symbol": "XXXX",
+            "strikePr": 0.0,
+            "optionTyp": "XX",
+            "open": 180.4,
+            "high": 185.35,
+            "low": 179.55,
+            "close": 184.9,
+            "settlePr": 184.9,
+            "contracts": 39792,
+            "valInlakh": 218740.95,
+            "openInt": 83568000,
+            "chgInOi": -24336000,
+            "timestamp": "19-JUN-2020",
+            "createdDate": "2020-06-19"
+        },
+        {
+            "id": null,
+            "expiryDt": "2020-06-25",
+            "instrument": "FUTSTK",
+            "symbol": "XXXX",
+            "strikePr": 0.0,
+            "optionTyp": "XX",
+            "open": 185.05,
+            "high": 192.2,
+            "low": 184.55,
+            "close": 188.0,
+            "settlePr": 188.0,
+            "contracts": 35340,
+            "valInlakh": 200295.69,
+            "openInt": 66924000,
+            "chgInOi": -16644000,
+            "timestamp": "22-JUN-2020",
+            "createdDate": "2020-06-22"
+        }
+    ],
+    "nseVolts": null,
+    "nseMTOs": null
+}
+
+
+
+************** JSON For "CE OI / PE OI" Bar Chart ***************
+NOTE: There is one set of  CE and PE per date , it has  to be  grouped in Bar chart.
+Bar chart for "openInt" value needs to be formed per date
+{
+    "message": "Successfully fetched OPT data... !!",
+    "status": "OK",
+    "nseFnOs": [
+        {
+            "id": null,
+            "expiryDt": "2020-06-25",
+            "instrument": "OPTSTK",
+            "symbol": "XXXX",
+            "strikePr": 190.0,
+            "optionTyp": "CE",
+            "open": 2.6,
+            "high": 3.35,
+            "low": 2.0,
+            "close": 3.1,
+            "settlePr": 3.1,
+            "contracts": 12553,
+            "valInlakh": 72608.25,
+            "openInt": 10326000,
+            "chgInOi": -171000,
+            "timestamp": "19-JUN-2020",
+            "createdDate": "2020-06-19"
+        },
+        {
+            "id": null,
+            "expiryDt": "2020-06-25",
+            "instrument": "OPTSTK",
+            "symbol": "XXXX",
+            "strikePr": 190.0,
+            "optionTyp": "PE",
+            "open": 10.25,
+            "high": 12.3,
+            "low": 7.75,
+            "close": 8.05,
+            "settlePr": 8.05,
+            "contracts": 753,
+            "valInlakh": 4507.81,
+            "openInt": 2235000,
+            "chgInOi": -201000,
+            "timestamp": "19-JUN-2020",
+            "createdDate": "2020-06-19"
+        },
+        {
+            "id": null,
+            "expiryDt": "2020-06-25",
+            "instrument": "OPTSTK",
+            "symbol": "XXXX",
+            "strikePr": 190.0,
+            "optionTyp": "CE",
+            "open": 3.0,
+            "high": 5.9,
+            "low": 3.0,
+            "close": 3.3,
+            "settlePr": 3.3,
+            "contracts": 13212,
+            "valInlakh": 77001.58,
+            "openInt": 8829000,
+            "chgInOi": -1497000,
+            "timestamp": "22-JUN-2020",
+            "createdDate": "2020-06-22"
+        },
+        {
+            "id": null,
+            "expiryDt": "2020-06-25",
+            "instrument": "OPTSTK",
+            "symbol": "XXXX",
+            "strikePr": 190.0,
+            "optionTyp": "PE",
+            "open": 7.9,
+            "high": 7.9,
+            "low": 3.7,
+            "close": 5.25,
+            "settlePr": 5.25,
+            "contracts": 4425,
+            "valInlakh": 25866.98,
+            "openInt": 3321000,
+            "chgInOi": 1086000,
+            "timestamp": "22-JUN-2020",
+            "createdDate": "2020-06-22"
+        }
+    ],
+    "nseVolts": null,
+    "nseMTOs": null
+}
+
+************** JSON For "Chg in CE OI / Chg in PE OI" Bar Chart(+ve and -ve values) ***************
+NOTE: There is one set of  CE and PE per date , it has  to be  grouped in Bar chart.
+Bar chart for "chgInOi" value needs to be formed per date
+{
+    "message": "Successfully fetched OPT data... !!",
+    "status": "OK",
+    "nseFnOs": [
+        {
+            "id": null,
+            "expiryDt": "2020-06-25",
+            "instrument": "OPTSTK",
+            "symbol": "SBIN",
+            "strikePr": 190.0,
+            "optionTyp": "CE",
+            "open": 2.6,
+            "high": 3.35,
+            "low": 2.0,
+            "close": 3.1,
+            "settlePr": 3.1,
+            "contracts": 12553,
+            "valInlakh": 72608.25,
+            "openInt": 10326000,
+            "chgInOi": -171000,
+            "timestamp": "19-JUN-2020",
+            "createdDate": "2020-06-19"
+        },
+        {
+            "id": null,
+            "expiryDt": "2020-06-25",
+            "instrument": "OPTSTK",
+            "symbol": "SBIN",
+            "strikePr": 190.0,
+            "optionTyp": "PE",
+            "open": 10.25,
+            "high": 12.3,
+            "low": 7.75,
+            "close": 8.05,
+            "settlePr": 8.05,
+            "contracts": 753,
+            "valInlakh": 4507.81,
+            "openInt": 2235000,
+            "chgInOi": -201000,
+            "timestamp": "19-JUN-2020",
+            "createdDate": "2020-06-19"
+        },
+        {
+            "id": null,
+            "expiryDt": "2020-06-25",
+            "instrument": "OPTSTK",
+            "symbol": "SBIN",
+            "strikePr": 190.0,
+            "optionTyp": "CE",
+            "open": 3.0,
+            "high": 5.9,
+            "low": 3.0,
+            "close": 3.3,
+            "settlePr": 3.3,
+            "contracts": 13212,
+            "valInlakh": 77001.58,
+            "openInt": 8829000,
+            "chgInOi": -1497000,
+            "timestamp": "22-JUN-2020",
+            "createdDate": "2020-06-22"
+        },
+        {
+            "id": null,
+            "expiryDt": "2020-06-25",
+            "instrument": "OPTSTK",
+            "symbol": "SBIN",
+            "strikePr": 190.0,
+            "optionTyp": "PE",
+            "open": 7.9,
+            "high": 7.9,
+            "low": 3.7,
+            "close": 5.25,
+            "settlePr": 5.25,
+            "contracts": 4425,
+            "valInlakh": 25866.98,
+            "openInt": 3321000,
+            "chgInOi": 1086000,
+            "timestamp": "22-JUN-2020",
+            "createdDate": "2020-06-22"
+        }
+    ],
+    "nseVolts": null,
+    "nseMTOs": null
+}
